@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop File Upload</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    
+</head>
+
+<body>
+    
+    <div class="upload-container">
+        <div>
+            <img src="herologo.png" alt="Hero Engineering Logo" width="200" height="75">
+            <h1>Hero Engineering Stamping Tool</h1>
+        </div>
+        <h1>Upload Your File</h1>
+        <div id="dropzone" class="dropzone">
+            <p>Drag & drop ZIP or PDF file here or click to select</p>
+        </div>
+        <input type="file" id="fileInput" accept=".zip, .pdf" style="display: none;">
+        <select name="stamptype" id="stype" class="form-control">
+            <option value="" selected disabled hidden>Choose a Stamp Type</option>
+            <option value=1>Issued for Client Review</option>
+            <option value=2>Asbuilt Final</option>
+            <option value=3>Certified for Construction</option>
+          </select>
+          <input type="date" id="date">
+          <input type="text" id="issuedto" placeholder="Issued to:">
+      
+        <p id="status"></p>
+        <button id="downloadBtn" style="display: none;">Download Processed Files</button>
+    </div>
+    <script src="/stamping/script.js"></script>
+    <script>
+       
+    </script>
+</body>
+</html>
